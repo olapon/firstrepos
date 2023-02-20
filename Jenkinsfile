@@ -18,4 +18,12 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo "Always executed"
+        }
+        failure {
+            echo "execute ONLy on Failure"
+        }
+    }
 }
