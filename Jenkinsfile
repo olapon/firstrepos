@@ -10,7 +10,7 @@ pipeline {
          stage("Test") {
              steps {
                 echo "Testing the application"
-                 echo env.BRANCH_NAME
+                 echo env.JENKINS_HOME
                 
             }
         }
