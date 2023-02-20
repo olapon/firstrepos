@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    enviornment {
+        NEW_VERSION = 5.23.100
+    }
 
     stages {
         stage("Build") {
@@ -11,6 +14,7 @@ pipeline {
              steps {
                 echo "Testing the application"
                  echo env.JENKINS_HOME
+                 echo "New Version is : ${NEW_VERSION}"
                 
             }
         }
