@@ -8,9 +8,14 @@ pipeline {
             }
         }
          stage("Test") {
+             when {
+                 expression {
+                     BRANCH_NAME == "dev"
+                 }
+             } 
             steps {
                 echo "Testing the application"
-                echo env.BRANCH_NAME
+                
             }
         }
         stage("Deploy") {
