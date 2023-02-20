@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage("Clone Project") {
+        stage("Build") {
             steps {
-                echo "cloning project from github"
+                echo "Building the application"
             }
         }
-         stage("Stage 2") {
+         stage("Test") {
             steps {
-                echo "stage 2"
+                echo "Testing the application"
             }
         }
-         stage("Third Stage") {
+         stage("Deploy") {
             steps {
-                echo "3rd Stage"
+                echo "Deploying the application"
             }
         }
     }
