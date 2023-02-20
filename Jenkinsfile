@@ -16,8 +16,8 @@ pipeline {
                 echo "Testing the application"
                  echo env.JENKINS_HOME
                  echo "New Version is : ${NEW_VERSION}"
-                 echo 'Credentials is : ${SERVER_CREDENTIALS}'
-                 //echo "Credentials is : ${SERVER_CREDENTIALS}"
+                 echo 'Credentials is : $SERVER_CREDENTIALS'
+                 //echo "Credentials is : $SERVER_CREDENTIALS"
                 
             }
         }
