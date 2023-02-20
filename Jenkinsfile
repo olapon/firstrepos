@@ -10,6 +10,7 @@ pipeline {
          stage("Test") {
             steps {
                 echo "Testing the application"
+                echo env.BRANCH_NAME
             }
         }
         stage("Deploy") {
