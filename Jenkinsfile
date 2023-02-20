@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    enviornment {
+    environment {
         NEW_VERSION = "5.23.100"
     }
 
