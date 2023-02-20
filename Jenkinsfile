@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     stages {
-        stage ("Clone Project") {
-            step {
+        stage("Clone Project") {
+            steps {
                 echo "cloning project from github"
             }
         }
