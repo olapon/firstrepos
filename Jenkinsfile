@@ -5,7 +5,16 @@ pipeline {
         stage("Clone Project") {
             steps {
                 echo "cloning project from github"
-                ls -lrt
+            }
+        }
+         stage("Stage 2") {
+            steps {
+                echo "stage 2"
+            }
+        }
+         stage("Third Stage") {
+            steps {
+                echo "3rd Stage"
             }
         }
     }
