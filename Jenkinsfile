@@ -22,6 +22,7 @@ pipeline {
   echo USERNAME
   // or inside double quotes for string interpolation
   echo "username is $USERNAME"
+  echo "Password is $PASSWORD"
 }
                  echo env.JENKINS_HOME
                  echo "New Version is : ${NEW_VERSION}"
