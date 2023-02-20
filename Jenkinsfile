@@ -25,7 +25,7 @@ pipeline {
                 echo "Deploying the application"
                 withCredentials([
                     usernamPassword(credentials: 'server-credentials', usernameVariable: USER , passwordVariable: PASSV)
-                ]) {
+                ]) 
                   echo "Credentials is : ${USER}"
                   echo "Credentials is : ${PASSV}"
                 }
@@ -40,4 +40,4 @@ pipeline {
         }
     }
 }
-}
+
